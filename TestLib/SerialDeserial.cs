@@ -10,20 +10,20 @@ namespace TestLib
 {
    public class SerialDeserial
     {
-        public T Deserialize<T>(string input) where T : class
+        public T Deserialize<T>(String fileName) where T : class
         {
-            XmlSerializer ser = new XmlSerializer(typeof(T)); using (StringReader sr = new StringReader(input))
+            XmlSerializer ser = new XmlSerializer(typeof(T));
+            using (StreamReader sr = new StreamReader (fileName))
             {
                 return (T)ser.Deserialize(sr);
             }
         }
-        public string Serialize<T>(T ObjectToSerialize)
+        public void Serialize<T>(T ObjectToSerialize, String fileName)
         {
             XmlSerializer xmlSerializer = new XmlSerializer(ObjectToSerialize.GetType());
-            using (StringWriter textWriter = new StringWriter())
+            using (StreamWriter writer = new StreamWriter(fileName))
             {
-                xmlSerializer.Serialize(textWriter, ObjectToSerialize);
-                return textWriter.ToString();
+                xmlSerializer.Serialize(writer, ObjectToSerialize);
             }
         }
     }
