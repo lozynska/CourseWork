@@ -16,5 +16,17 @@ namespace CourseWork
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_New_Test form_New_Test = new Form_New_Test(); 
+            form_New_Test.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form_Edit form_Edit = new Form_Edit();
+            form_Edit.Show();
+        }
     }
 }
