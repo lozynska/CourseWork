@@ -43,7 +43,7 @@ namespace CourseWork
         {
             Question question = new Question();
             question.Description = textBox4.Text;
-            question.Difficulty = domainUpDown1.Text;
+            question.Difficulty = numericUpDown1.Text;
             question.Answer = new List<Answer>();
             foreach (var i in comboBox1.Items)
             {
