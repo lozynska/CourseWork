@@ -21,7 +21,7 @@ namespace CourseWork
             InitializeComponent();
             listBox1.DisplayMember = "Description";
             comboBox1.DisplayMember = "Description";
-            num = 1;
+            num = 0;
             textBox3.Text = num.ToString();
             textBox6.Text = @"Tests";
         }

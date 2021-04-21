@@ -21,7 +21,7 @@ namespace TestLib
         public void Serialize<T>(T ObjectToSerialize, String fileName)
         {
             XmlSerializer xmlSerializer = new XmlSerializer(ObjectToSerialize.GetType());
-            using (StreamWriter writer = new StreamWriter(fileName))
+            using (StreamWriter writer = new StreamWriter(fileName, false))
             {
                 xmlSerializer.Serialize(writer, ObjectToSerialize);
             }
