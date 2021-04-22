@@ -13,7 +13,7 @@ namespace TestLib
 		public string IsRight { get; set; }
 	}
 
-	[XmlRoot(ElementName = "Question")]
+	[XmlRoot(ElementName = "Questions")]
 	public class Question
 	{
 		[XmlElement(ElementName = "Description")]
@@ -29,12 +29,15 @@ namespace TestLib
 	{
 		[XmlElement(ElementName = "Author")]
 		public string Author { get; set; }
-		[XmlElement(ElementName = "TestName")]
-		public string TestName { get; set; }
+		
+		[XmlElement(ElementName = "DtCreate")]
+		public DateTime DtCreate { get; set; }
+		[XmlElement(ElementName = "Title")]
+		public string Title { get; set; }
 		[XmlElement(ElementName = "Qty_questions")]
 		public string Qty_questions { get; set; }
-		[XmlElement(ElementName = "Question")]
-		public List<Question> Question { get; set; }
+		[XmlElement(ElementName = "Questions")]
+		public List<Question> Questions { get; set; }
 		//[XmlAttribute(AttributeName = "xsi", Namespace = "http://www.w3.org/2000/xmlns/")]
 		//public string Xsi { get; set; }
 		//[XmlAttribute(AttributeName = "xsd", Namespace = "http://www.w3.org/2000/xmlns/")]

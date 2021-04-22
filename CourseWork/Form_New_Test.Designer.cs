@@ -137,7 +137,7 @@ namespace CourseWork
             this.groupBox3.Size = new System.Drawing.Size(366, 147);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Question";
+            this.groupBox3.Text = "Questions";
             // 
             // label5
             // 
@@ -163,7 +163,7 @@ namespace CourseWork
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Question";
+            this.label4.Text = "Questions";
             // 
             // groupBox4
             // 

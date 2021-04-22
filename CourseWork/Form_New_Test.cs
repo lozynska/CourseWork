@@ -30,11 +30,12 @@ namespace CourseWork
         {
             Test test = new Test();
             test.Author = textBox1.Text;
-            test.TestName = textBox2.Text;
+            test.Title = textBox2.Text;
             test.Qty_questions = textBox3.Text;
-            test.Question = questions;
+            test.Questions = questions;
+            test.DtCreate = DateTime.Now;
             SerialDeserial serialDeserial = new SerialDeserial();
-            var file = textBox6.Text + Path.DirectorySeparatorChar + test.TestName + ".xml" ;
+            var file = textBox6.Text + Path.DirectorySeparatorChar + test.Title + ".xml" ;
             serialDeserial.Serialize(test, file);
             MessageBox.Show("File is saved");
 
