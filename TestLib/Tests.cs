@@ -35,10 +35,10 @@ namespace TestLib
 		public string Qty_questions { get; set; }
 		[XmlElement(ElementName = "Question")]
 		public List<Question> Question { get; set; }
-		[XmlAttribute(AttributeName = "xsi", Namespace = "http://www.w3.org/2000/xmlns/")]
-		public string Xsi { get; set; }
-		[XmlAttribute(AttributeName = "xsd", Namespace = "http://www.w3.org/2000/xmlns/")]
-		public string Xsd { get; set; }
+		//[XmlAttribute(AttributeName = "xsi", Namespace = "http://www.w3.org/2000/xmlns/")]
+		//public string Xsi { get; set; }
+		//[XmlAttribute(AttributeName = "xsd", Namespace = "http://www.w3.org/2000/xmlns/")]
+		//public string Xsd { get; set; }
 	}
 
 }

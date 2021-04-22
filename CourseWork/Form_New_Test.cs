@@ -36,6 +36,7 @@ namespace CourseWork
             SerialDeserial serialDeserial = new SerialDeserial();
             var file = textBox6.Text + Path.DirectorySeparatorChar + test.TestName + ".xml" ;
             serialDeserial.Serialize(test, file);
+            MessageBox.Show("File is saved");
 
         }
 

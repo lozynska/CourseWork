@@ -36,6 +36,7 @@ namespace CourseWork
                 textBox1.DataBindings.Add("Text", test, "Author");
                 textBox2.DataBindings.Add("Text", test, "TestName");
                 textBox3.DataBindings.Add("Text", test, "Qty_questions");
+               // numericUpDown1.DataBindings.Add("Text", test, "Difficulty");
                 qtBs = new BindingSource(test, "Question");
                 listBox1.DataSource = qtBs;
                 //foreach (var item in test.Question)
@@ -44,7 +45,7 @@ namespace CourseWork
                 //    numericUpDown1.Text = item.Difficulty;
                 //}
                 //listBox1.SelectedIndex = 0;
-
+               
             }
         }
 
@@ -134,6 +135,7 @@ namespace CourseWork
             SerialDeserial serialDeserial = new SerialDeserial();
            
             serialDeserial.Serialize(test, file);
+            MessageBox.Show("File is saved");
         }
     }
 }
